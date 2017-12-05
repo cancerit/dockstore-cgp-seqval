@@ -1,6 +1,6 @@
 {
   "in_file": {
-    "path": "",
+    "path": "https://github.com/cancerit/dockstore-cgp-seqval/blob/develop/examples/data/interleaved.fq.gz?raw=true",
     "class": "File"
   },
   "report_json": {

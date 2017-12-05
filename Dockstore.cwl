@@ -8,10 +8,6 @@ label: "CGP sequence validator"
 
 cwlVersion: v1.0
 
-doc: |
-    ![build_status](https://quay.io/repository/wtsicgp/dockstore-cgp-seqval/status)
-    A Docker container for validating interleaved fastq files. See the [dockstore-cgp-seqval](https://github.com/cancerit/dockstore-cgp-seqval) website for more information.
-
 dct:creator:
   "@id": "keiranmraine@gmail.com"
   foaf:name: Keiran Raine
@@ -39,3 +35,9 @@ outputs:
 
 
 baseCommand: ["cgpSeqInputVal", "seq-valid", "-r", "report.json"]
+
+doc: |
+    ![build_status](https://quay.io/repository/wtsicgp/dockstore-cgp-seqval/status)
+    A Docker container for validating interleaved fastq files.
+
+    See [dockstore-cgp-seqval](https://github.com/cancerit/dockstore-cgp-seqval) website for more information.
