@@ -1,0 +1,10 @@
+{
+  "in_file": {
+    "path": "",
+    "class": "File"
+  },
+  "report_json": {
+    "path": "/tmp/report.json",
+    "class": "File"
+  }
+}
