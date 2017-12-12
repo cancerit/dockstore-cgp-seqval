@@ -1,19 +1,29 @@
 # dockstore-cgp-seqval
 
-...
+A Docker and Dockstore wrapper for the `cgpSeqInputVal seq-valid` tool from [cgp_seq_input_val](https://github.com/cancerit/cgp_seq_input_val).
 
 [![Docker Repository on Quay](https://quay.io/repository/wtsicgp/dockstore-cgp-seqval/status "Docker Repository on Quay")](https://quay.io/repository/wtsicgp/dockstore-cgp-seqval)
 
 [![Build Status](https://travis-ci.org/cancerit/dockstore-cgp-seqval.svg?branch=master)](https://travis-ci.org/cancerit/dockstore-cgp-seqval) : master
 [![Build Status](https://travis-ci.org/cancerit/dockstore-cgp-seqval.svg?branch=develop)](https://travis-ci.org/cancerit/dockstore-cgp-seqval) : develop
 
-Inputs are:
+## Input and Output
 
-...
+Please see `examples/*.json` for example json files for use with dockstore.
 
-Outputs are:
+### inputs
 
-...
+* `fastqs_in` - a list of 1 or 2 fastq files to be processed.
+* `qc_pairs` - Number of pairs to asses for phred quality range.
+  * Defaults to 100,000 (se to 0 for all, very slow)
+
+Other input options defined in the cwl should not be defined in the json file by users.
+
+### outputs
+
+* `report_json` - A json report evaluating the analysis of the `in_file`.
+* `ifastq_out` - Path to store interleaved gzipped fastq output file.
+  * Only generated when input is paired fastq.
 
 ## Development environment
 
