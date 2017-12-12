@@ -1,6 +1,6 @@
 {
   "in_file": {
-    "path": "https://github.com/cancerit/dockstore-cgp-seqval/blob/develop/examples/data/interleaved.fq.gz?raw=true",
+    "path": "ftp://ftp.sanger.ac.uk/pub/cancer/dockstore/examples/tiny_interleaved.fq.gz",
     "class": "File"
   },
   "report_json": {
