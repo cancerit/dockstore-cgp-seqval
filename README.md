@@ -25,6 +25,20 @@ Other input options defined in the cwl should not be defined in the json file by
 * `ifastq_out` - Path to store interleaved gzipped fastq output file.
   * Only generated when input is paired fastq.
 
+## examples
+
+There are two examples included in this repository.
+
+1. `examples/interleaved_fq_in.json`
+  * A single interleaved gzipped fastq is presented as input.
+  * Output is the json report as described [here](https://github.com/cancerit/cgp_seq_input_val#cgpseqinputval-seq-valid).
+1. `examples/paired_fq_in.json`
+  * A pair if read 1/2 gzipped fastq files are presented as input.
+  * Output is the json report ___and___ an interleaved gzipped fastq file.
+
+Comparing the generated fastq with the input interleaved file using zdiff will report
+an exact match (compression may differ slightly so MD5 is not appropriate).
+
 ## Development environment
 
 This project uses git pre-commit hooks.  As these will execute on your system you
