@@ -65,4 +65,5 @@ doc: |
     ![build_status](https://quay.io/repository/wtsicgp/dockstore-cgp-seqval/status)
     A Docker container for validating interleaved fastq files.
 
-    See [dockstore-cgp-seqval](https://github.com/cancerit/dockstore-cgp-seqval) website for more information.
+    See the dockstore-cgp-seqval [README](https://github.com/cancerit/dockstore-cgp-seqval/blob/develop/README.md)
+    for full details of how to use.
