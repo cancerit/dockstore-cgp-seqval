@@ -3,7 +3,7 @@ FROM  alpine:3.7
 MAINTAINER  keiranmraine@gmail.com
 
 LABEL uk.ac.sanger.cgp="Cancer Genome Project, Wellcome Trust Sanger Institute" \
-      version="0.0.0" \
+      version="0.1.0" \
       description="Tool to verify sequencing data integrity"
 
 USER  root
