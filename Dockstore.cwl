@@ -15,7 +15,7 @@ dct:creator:
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/wtsicgp/dockstore-cgp-seqval:0.0.0"
+    dockerPull: "quay.io/wtsicgp/dockstore-cgp-seqval:0.1.0"
 
 inputs:
   fastqs_in:
