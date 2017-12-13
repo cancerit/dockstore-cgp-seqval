@@ -1,0 +1,17 @@
+{
+  "fastqs_in": [
+    { "path": "ftp://ftp.sanger.ac.uk/pub/cancer/dockstore/examples/tiny_1.fq.gz",
+      "class": "File"},
+    { "path": "ftp://ftp.sanger.ac.uk/pub/cancer/dockstore/examples/tiny_2.fq.gz",
+      "class": "File"},
+  ],
+  "qc_pairs": 100000,
+  "ifastq_out": {
+      "path": "/tmp/interleaved.fq.gz",
+      "class": "File"
+  },
+  "report_json": {
+    "path": "/tmp/report.json",
+    "class": "File"
+  }
+}
