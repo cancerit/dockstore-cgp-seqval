@@ -20,15 +20,15 @@ requirements:
 inputs:
   fastqs_in:
     type:
-      - 'null'
-      - type: array
-        items: File
+      type: array
+      items: File
       doc: "Fastq files to verify, can be gzipped."
-      inputBinding:
-        prefix: -i
-        position: 1
-        separate: true
-        shellQuote: true
+    inputBinding:
+      prefix: -i
+      position: 1
+      separate: true
+      shellQuote: true
+
   qc_pairs:
     type: int
     doc: "Assess phred quality scale using N pairs (0=all, slow)"
@@ -37,6 +37,7 @@ inputs:
       prefix: -q
       position: 2
       separate: true
+
   output_fq:
     type: string
     doc: "Not to be overridden by users: Output as interleaved FASTQ (ignored for interleaved input)"
