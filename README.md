@@ -45,6 +45,12 @@ This project uses git pre-commit hooks.  As these will execute on your system yo
 need to activate them.  Failure to adhere to these may result in rejection of your
 work.
 
+You will need to install:
+
+```
+gem install --user-install mdl
+```
+
 The following command will activate the checks to execute before a commit is processed:
 
 ```
