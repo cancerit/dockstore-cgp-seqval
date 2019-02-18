@@ -22,7 +22,7 @@ Other input options defined in the cwl should not be defined in the json file by
 ### outputs
 
 * `report_json` - A json report evaluating the analysis of the `in_file`.
-* `ifastq_out` - Path to store interleaved gzipped fastq output file.
+* `ifastq_out` - Path to store interleaved gzip compressed fastq output file.
   * Only generated when input is paired fastq.
 
 ## examples
@@ -30,11 +30,11 @@ Other input options defined in the cwl should not be defined in the json file by
 There are two examples included in this repository.
 
 1. `examples/interleaved_fq_in.json`
-  * A single interleaved gzipped fastq is presented as input.
+  * A single interleaved gzip/bzip2 compressed fastq is presented as input.
   * Output is the json report as described [here](https://github.com/cancerit/cgp_seq_input_val#cgpseqinputval-seq-valid).
 1. `examples/paired_fq_in.json`
-  * A pair if read 1/2 gzipped fastq files are presented as input.
-  * Output is the json report ___and___ an interleaved gzipped fastq file.
+  * A pair if read 1/2 gzip/bzip2 compressed fastq files are presented as input.
+  * Output is the json report ___and___ an interleaved gzip compressed fastq file.
 
 Comparing the generated fastq with the input interleaved file using zdiff will report
 an exact match (compression may differ slightly so MD5 is not appropriate).
