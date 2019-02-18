@@ -1,5 +1,9 @@
 # Changes
 
+## 0.1.3
+
+* Started to use `cgp_seq_input_val-1.4.2-py3-none-any.whl` in the docker container for its new bz2 support feature.
+
 ## 0.1.2
 
 * Started to use `cgp_seq_input_val-1.4.1-py3-none-any.whl` in the docker container.
