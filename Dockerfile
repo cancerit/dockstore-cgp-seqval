@@ -13,7 +13,7 @@ ENV PATH $OPT/bin:$PATH
 
 RUN apk add --no-cache bash python3 py3-pip
 
-RUN pip3 install https://github.com/cancerit/cgp_seq_input_val/releases/download/1.4.1/cgp_seq_input_val-1.4.1-py3-none-any.whl
+RUN pip3 install https://github.com/cancerit/cgp_seq_input_val/releases/download/1.4.1/cgp_seq_input_val-1.4.2-py3-none-any.whl
 
 RUN addgroup -S cgp && adduser -G cgp -S cgp
 
