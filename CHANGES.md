@@ -1,5 +1,9 @@
 # Changes
 
+## 1.0.0
+
+* Updated to use cgp_seq_input_val `1.5.0` for its Casava 1.8 FastQs compatibility.
+
 ## 0.1.3
 
 * Started to use `cgp_seq_input_val-1.4.2-py3-none-any.whl` in the docker container for its new bz2 support feature.

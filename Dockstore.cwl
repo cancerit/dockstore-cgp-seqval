@@ -10,14 +10,13 @@ cwlVersion: v1.0
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/wtsicgp/dockstore-cgp-seqval:0.1.3"
+    dockerPull: "quay.io/wtsicgp/dockstore-cgp-seqval:1.0.0"
 
 inputs:
   fastqs_in:
     type:
       type: array
       items: File
-    format: edam:format_1930
     doc: "Fastq files to verify, can be gzipped."
     inputBinding:
       prefix: -i
@@ -46,13 +45,11 @@ inputs:
 outputs:
   report_json:
     type: File
-    format: edam:format_3464
     outputBinding:
       glob: report.json
 
   ifastq_out:
     type: ["null", File]
-    format: edam:format_1930
     outputBinding:
       glob: interleaved.fq.gz
 
@@ -68,11 +65,9 @@ doc: |
 
 $schemas:
   - http://schema.org/docs/schema_org_rdfa.html
-  - http://edamontology.org/EDAM_1.18.owl
 
 $namespaces:
   s: http://schema.org/
-  edam: http://edamontology.org/
 
 s:codeRepository: https://github.com/cancerit/dockstore-cgp-seqval
 s:license: https://spdx.org/licenses/AGPL-3.0
