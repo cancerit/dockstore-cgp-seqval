@@ -1,5 +1,9 @@
 # Changes
 
+## 1.5.4
+
+* updated CWL files metadata schema IRI
+
 ## 1.0.0
 
 * Updated to use cgp_seq_input_val `1.5.0` for its Casava 1.8 FastQs compatibility.
